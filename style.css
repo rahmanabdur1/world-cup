@@ -138,14 +138,7 @@ position: relative;
 
 }
 
-.match-color {
-    background: #DD0000;
-}
 
-.match-color a {
-    background-color: #DD0000;
-    color: white;
-}
 
 .page2 a {
     text-decoration: none;
@@ -155,16 +148,6 @@ position: relative;
     border-radius: 10px;
 
 }
-
-.group-color {
-    background: #DD0000;
-}
-
-.group-color a {
-    background-color: #DD0000;
-    color: white;
-}
-
 .page3 a {
     text-decoration: none;
     color: white;
@@ -326,4 +309,151 @@ position: relative;
 
 .icon {
     font-size: 18px;
+}
+/*=================================== media quary for phone end =================================== */
+/*=================================== media quary for phone end =================================== */
+
+
+/*=================================== media quary for tablets start =================================== */
+/*=================================== media quary for tablets start =================================== */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {
+        width: 100%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .player-sec {
+        margin-left: 75px;
+
+    }
+
+    .player {
+        width: 734px;
+        height: 398px;
+        position: relative;
+        right: 208px;
+    }
+
+    .player-title {
+        width: 289px;
+        height: 150px;
+        font-weight: 700;
+        font-size: 40px;
+    }
+
+    .player-detail {
+        width: 316px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 280px;
+        overflow: hidden;
+
+    }
+
+    .button {
+        width: 161px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 18px;
+        padding: 11px 18px;
+
+    }
+
+    .player-img img {
+        right: 10px;
+        top: 116px;
+    }
+
+    .blogs,
+    .blogs-sec {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: end;
+    }
+
+    .blogs {
+        position: relative;
+        right: 20px;
+    }
+
+    .blog-hide {
+        display: none;
+    }
+
+    .view-button {
+        left: 360px;
+    }
+
+    .nav-container {
+        flex-direction: row;
+        width: 834px;
+        justify-content: space-evenly;
+        height: 150px;
+        background-color: white;
+        position: relative;
+        right: 265px;
+
+    }
+
+    .page {
+        border: 1px solid black;
+        height: 64px;
+        font-weight: 500;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .page a {
+        position: relative;
+        top: 16px;
+
+    }
+
+    .match-sec {
+        position: relative;
+        right: 5px;
+    }
+
+    .container {
+        width: 899px;
+        height: 345px;
+    }
+
+    .container hr {
+        width: 734px;
+    }
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        gap: 15px;
+    }
+
+    .last-footer-info {
+        position: relative;
+        left: 205px;
+    }
+
+   
+}
+
+/*======================================= media quary for tab end ========================================== */
+/*======================================= media quary for tab end ========================================== */
+
+
+/*=================================== media quary for desktop start =================================== */
+/*=================================== media quary for desktop start =================================== */
+
+@media screen and (min-width:1024px) {
+    .view-button {
+        display: none;
+    }
 }
